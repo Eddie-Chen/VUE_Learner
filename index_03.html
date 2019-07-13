@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.0/vue.min.js" 
+	integrity="sha256-BvBZFKJP9LZCHNHEM+MJW9qaIEapmnytZjRmQWeRhbs=" crossorigin="anonymous"></script>
+	<script src="js/main_03.js"></script>
+	<link rel="stylesheet" href="css/style_01.css">
+</head>
+
+<body onload="initial();">
+	<h1>事件與方法的使用方式</h1>
+	<h1>Vue.js</h1>
+	<div id="msg">
+		<!-- Mustache 標籤 -->
+		<p>{{message}}</p>
+		<input type="text" v-model="text1">
+		<input type="button" v-on:click="doAction" value="click">
+	</div>
+	<hr>
+	<h1>以上方例子，進行變更輸入的文字顏色</h1>
+	<div id="msg_2">
+		<!-- Mustache 標籤 -->
+		<p v-html="message2"></p>
+		<input type="text" v-model="text2">
+		<input type="button" v-on:click="doAction" value="click">
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.0/vue.min.js" 
+	integrity="sha256-BvBZFKJP9LZCHNHEM+MJW9qaIEapmnytZjRmQWeRhbs=" crossorigin="anonymous"></script>
+	<script src="js/main_08.js"></script>
+	<link rel="stylesheet" href="css/style_02.css">
+</head>
+
+<body onload="initial();">
+	<h1>樣式class的綁定</h1>
+	<h1>Vue.js</h1>
+		<!-- a 和 b 兩個名稱的class，分別指定 isA 和 isB 屬性名稱，只要改變這兩個屬性的內容值，等同於控制<p>標籤是否套用設定的class樣式 -->
+		<p id="msg" v-bind:class="{'a':isA, 'b'=isB}" v-on:click="change();">class操作範例</p>
+</body>
+
+</html>

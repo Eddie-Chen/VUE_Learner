@@ -10,10 +10,13 @@
 </head>
 
 <body onload="initial();">
-	<h1>將Vue物件將設定值輸出到HTML頁面</h1>
+	<h1>從HTML頁面輸入資料值到Vue物件</h1>
 	<h1>Vue.js</h1>
-	<!-- Mustache 標籤 -->
-	<p id="msg">{{message}}</p>
+	<div id="msg">
+		<!-- Mustache 標籤 -->
+		<p>{{message}}</p>
+		<input type="text" v-model="message">
+	</div>
 </body>
 
 </html>

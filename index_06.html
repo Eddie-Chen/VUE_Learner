@@ -5,15 +5,20 @@
 	<title>Hello</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.0/vue.min.js" 
 	integrity="sha256-BvBZFKJP9LZCHNHEM+MJW9qaIEapmnytZjRmQWeRhbs=" crossorigin="anonymous"></script>
-	<script src="js/main_01.js"></script>
+	<script src="js/main_06.js"></script>
 	<link rel="stylesheet" href="css/style_01.css">
 </head>
 
 <body onload="initial();">
-	<h1>將Vue物件將設定值輸出到HTML頁面</h1>
+	<h1>計算次數的累計加總屬性</h1>
 	<h1>Vue.js</h1>
-	<!-- Mustache 標籤 -->
-	<p id="msg">{{message}}</p>
+	<div id="msg">
+		<!-- Mustache 標籤 -->
+		<p>{{number}}次數累計後的加總結果:</p>
+		<p>{{ result }}</p>
+		
+		<input type="text" v-model="number">
+	</div>
 </body>
 
 </html>

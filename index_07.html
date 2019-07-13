@@ -5,15 +5,18 @@
 	<title>Hello</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.0/vue.min.js" 
 	integrity="sha256-BvBZFKJP9LZCHNHEM+MJW9qaIEapmnytZjRmQWeRhbs=" crossorigin="anonymous"></script>
-	<script src="js/main_01.js"></script>
+	<script src="js/main_07.js"></script>
 	<link rel="stylesheet" href="css/style_01.css">
 </head>
 
 <body onload="initial();">
-	<h1>將Vue物件將設定值輸出到HTML頁面</h1>
+	<h1>建立 Get / Set</h1>
 	<h1>Vue.js</h1>
-	<!-- Mustache 標籤 -->
-	<p id="msg">{{message}}</p>
+	<div id="msg">
+		<!-- Mustache 標籤 -->
+		<p>未稅價格：<input type="text" v-model="woTax"></p>
+		<p>含稅價格：<input type="text" v-model="wTax"></p>
+	</div>
 </body>
 
 </html>
