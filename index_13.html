@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.0/vue.min.js"
+		integrity="sha256-BvBZFKJP9LZCHNHEM+MJW9qaIEapmnytZjRmQWeRhbs=" crossorigin="anonymous"></script>
+	<script src="js/main_13.js"></script>
+	<link rel="stylesheet" href="css/style_02.css">
+</head>
+
+<body onload="initial();">
+	<h1>動態反覆執行的v-for(可多選）</h1>
+	<h1>Vue.js</h1>
+	<div id="msg">
+		<ol>
+			<li v-for="obj in data">
+				{{obj}}
+			</li>
+		</ol>
+		<hr>
+		<select size="5" multiple v-model="data">
+			<option>Windows</option>
+			<option>MacOS</option>
+			<option>Linux</option>
+			<option>Android</option>
+			<option>iOS</option>
+		</select>
+	</div>
+</body>
+
+</html>

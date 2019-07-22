@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.0/vue.min.js"
+		integrity="sha256-BvBZFKJP9LZCHNHEM+MJW9qaIEapmnytZjRmQWeRhbs=" crossorigin="anonymous"></script>
+	<script src="js/main_12.js"></script>
+	<link rel="stylesheet" href="css/style_02.css">
+</head>
+
+<body onload="initial();">
+	<h1>靜態反覆執行的v-for</h1>
+	<h1>Vue.js</h1>
+	<div id="msg">
+		<ul>
+			<li v-for="obj in data">
+				{{obj}}
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.0/vue.min.js"
+		integrity="sha256-BvBZFKJP9LZCHNHEM+MJW9qaIEapmnytZjRmQWeRhbs=" crossorigin="anonymous"></script>
+	<script src="js/main_10.js"></script>
+	<link rel="stylesheet" href="css/style_02.css">
+</head>
+
+<body onload="initial();">
+	<h1>控制顯示狀態的 v-if</h1>
+	<h1>Vue.js</h1>
+	<div id="msg">
+		<p v-if="flag">操作訊息的顯示狀態</p>
+		<div>
+			<input type="checkbox" id="ck" v-model="flag">
+			<label for="ck">顯示</label>
+		</div>
+	</div>
+</body>
+
+</html>

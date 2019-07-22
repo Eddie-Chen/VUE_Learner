@@ -13,7 +13,8 @@
 	<h1>樣式class的綁定</h1>
 	<h1>Vue.js</h1>
 		<!-- a 和 b 兩個名稱的class，分別指定 isA 和 isB 屬性名稱，只要改變這兩個屬性的內容值，等同於控制<p>標籤是否套用設定的class樣式 -->
-		<p id="msg" v-bind:class="{'a':isA, 'b'=isB}" v-on:click="change();">class操作範例</p>
+		<p id="msg" v-bind:class="{'a':isA, 'b':isB}" v-on:click="change();">1st.class操作範例(每次點擊都會產生變化)</p>
+		<p>2nd.class操作範例</p>
 </body>
 
 </html>
